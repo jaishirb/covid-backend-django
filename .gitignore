@@ -1,6 +1,9 @@
 db.sqlite3
 *.py[cod]
 *.pyc
+__pycache__/
+*.pyc
+*.pyo
 app/static
 app/client
 app/media

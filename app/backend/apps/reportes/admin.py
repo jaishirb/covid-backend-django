@@ -5,6 +5,7 @@ from . import models
 @admin.register(models.TipoNecesidad)
 class TipoNecesidadAdmin(admin.ModelAdmin):
     list_display = [
+        'id',
         'nombre',
     ]
     search_fields = [
@@ -17,6 +18,7 @@ class TipoNecesidadAdmin(admin.ModelAdmin):
 @admin.register(models.TipoReporte)
 class TipoReporteAdmin(admin.ModelAdmin):
     list_display = [
+        'id',
         'nombre',
     ]
     search_fields = [
@@ -29,6 +31,7 @@ class TipoReporteAdmin(admin.ModelAdmin):
 @admin.register(models.ReporteCovid)
 class ReporteCovidAdmin(admin.ModelAdmin):
     list_display = [
+        'id',
         'nombre',
         'edad',
         'identificacion',
@@ -49,6 +52,7 @@ class ReporteCovidAdmin(admin.ModelAdmin):
 @admin.register(models.UbicacionesCovid)
 class UbicacionesCovidAdmin(admin.ModelAdmin):
     list_display = [
+        'id',
         'fecha',
         'direccion',
         'ubicacion',
@@ -66,6 +70,7 @@ class UbicacionesCovidAdmin(admin.ModelAdmin):
 @admin.register(models.ReporteNecesidad)
 class ReporteNecesidadAdmin(admin.ModelAdmin):
     list_display = [
+        'id',
         'descripcion',
         'tipo_necesidad',
         'nombre',
@@ -87,6 +92,7 @@ class ReporteNecesidadAdmin(admin.ModelAdmin):
 @admin.register(models.UbicacionesNecesidad)
 class UbicacionesNecesidadAdmin(admin.ModelAdmin):
     list_display = [
+        'id',
         'fecha',
         'direccion',
         'ubicacion',
