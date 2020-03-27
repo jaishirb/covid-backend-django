@@ -52,7 +52,7 @@ THIRD_PARTY_APPS = [
 
 #'backend.apps.activos',
 BACKEND_APPS = [
-
+    'backend.apps.usuarios'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + BACKEND_APPS
@@ -101,7 +101,7 @@ AWS_QUERYSTRING_AUTH = False
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': os.environ.get('POSTGRES_DB', ''),
         'USER': os.environ.get('POSTGRES_USER', ''),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', ''),
