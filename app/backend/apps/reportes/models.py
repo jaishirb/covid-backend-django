@@ -44,8 +44,8 @@ class ReporteCovid(ModelBase):
         return str(self.id)
 
     class Meta:
-        verbose_name = 'Reporte necesidad'
-        verbose_name_plural = 'Reporte necesidades'
+        verbose_name = 'Reporte Covid'
+        verbose_name_plural = 'Reportes covid'
 
 
 class UbicacionesCovid(ModelBase):

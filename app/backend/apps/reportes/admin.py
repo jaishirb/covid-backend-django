@@ -1,6 +1,7 @@
 from django.contrib import admin, messages
 from . import models
 
+
 # Register your models here.
 @admin.register(models.TipoNecesidad)
 class TipoNecesidadAdmin(admin.ModelAdmin):
@@ -15,6 +16,7 @@ class TipoNecesidadAdmin(admin.ModelAdmin):
     list_filter = [
     ]
 
+
 @admin.register(models.TipoReporte)
 class TipoReporteAdmin(admin.ModelAdmin):
     list_display = [
@@ -27,6 +29,7 @@ class TipoReporteAdmin(admin.ModelAdmin):
 
     list_filter = [
     ]
+
 
 @admin.register(models.ReporteCovid)
 class ReporteCovidAdmin(admin.ModelAdmin):
@@ -48,6 +51,7 @@ class ReporteCovidAdmin(admin.ModelAdmin):
         'tipo_persona',
         'edad'
     ]
+
 
 @admin.register(models.UbicacionesCovid)
 class UbicacionesCovidAdmin(admin.ModelAdmin):

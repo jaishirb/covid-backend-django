@@ -12,34 +12,32 @@ class TipoNecesidadViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.TipoNecesidadSerializer
     model = models.TipoNecesidad
 
+
 class TipoReporteViewSet(viewsets.ModelViewSet):
     queryset = models.TipoReporte.objects.all()
     serializer_class = serializers.TipoReporteSerializer
     model = models.TipoReporte
+
 
 class ReporteCovidViewSet(viewsets.ModelViewSet):
     queryset = models.ReporteCovid.objects.all()
     serializer_class = serializers.ReporteCovidSerializer
     model = models.ReporteCovid
 
-class UbicacionesCovid(viewsets.ModelViewSet):
+
+class UbicacionesCovidViewSet(viewsets.ModelViewSet):
     queryset = models.UbicacionesCovid.objects.all()
     serializer_class = serializers.UbicacionesCovidSerializer
     model = models.UbicacionesCovid
 
-class ReporteNecesidad(viewsets.ModelViewSet):
+
+class ReporteNecesidadViewSet(viewsets.ModelViewSet):
     queryset = models.ReporteNecesidad.objects.all()
     serializer_class = serializers.ReporteNecesidadSerializer
     model = models.ReporteNecesidad
 
-class UbicacionesNecesidad(viewsets.ModelViewSet):
+
+class UbicacionesNecesidadViewSet(viewsets.ModelViewSet):
     queryset = models.UbicacionesNecesidad.objects.all()
     serializer_class = serializers.UbicacionesNecesidadSerializer
     model = models.UbicacionesNecesidad
-    
-
-
-
-
-    
-    

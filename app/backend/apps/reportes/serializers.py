@@ -6,7 +6,7 @@ from rest_framework import serializers
 class TipoNecesidadSerializer(CustomSerializer):
 
     class Meta:
-        model = models.Pedido
+        model = models.TipoNecesidad
         exclude = [
             'archived',
             'created',
@@ -18,7 +18,7 @@ class TipoNecesidadSerializer(CustomSerializer):
 class TipoReporteSerializer(CustomSerializer):
     
     class Meta:
-        model = models.Pedido
+        model = models.TipoReporte
         exclude = [
             'archived',
             'created',
@@ -30,7 +30,7 @@ class TipoReporteSerializer(CustomSerializer):
 class UbicacionesCovidSerializer(CustomSerializer):
     
     class Meta:
-        model = models.Pedido
+        model = models.UbicacionesCovid
         exclude = [
             'archived',
             'created',
@@ -42,7 +42,7 @@ class UbicacionesCovidSerializer(CustomSerializer):
 class ReporteNecesidadSerializer(CustomSerializer):
     
     class Meta:
-        model = models.Pedido
+        model = models.ReporteNecesidad
         exclude = [
             'archived',
             'created',
@@ -54,7 +54,7 @@ class ReporteNecesidadSerializer(CustomSerializer):
 class UbicacionesNecesidadSerializer(CustomSerializer):
     
     class Meta:
-        model = models.Pedido
+        model = models.UbicacionesNecesidad
         exclude = [
             'archived',
             'created',
@@ -66,7 +66,7 @@ class UbicacionesNecesidadSerializer(CustomSerializer):
 class ReporteCovidSerializer(CustomSerializer):
     
     class Meta:
-        model = models.Pedido
+        model = models.ReporteCovid
         exclude = [
             'archived',
             'created',
